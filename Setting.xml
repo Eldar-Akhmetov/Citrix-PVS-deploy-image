@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+	<StoresAndDevices>
+		  <Associated_Stores>
+			<Store>Store-01</Store>
+			<DeviceCollection>DeviceCollection-01</DeviceCollection>
+		  </Associated_Stores>
+		  <Associated_Stores>
+			<Store>Store-02</Store>
+			<DeviceCollection>DeviceCollection-02</DeviceCollection>
+		  </Associated_Stores>
+		  <Associated_Stores>
+			<Store>Store-03</Store>
+			<DeviceCollection>DeviceCollection-03</DeviceCollection>
+		  </Associated_Stores>
+		  <Associated_Stores>
+			<Store>Store-21</Store>
+			<DeviceCollection>DeviceCollection-21</DeviceCollection>
+		  </Associated_Stores>
+		  <Associated_Stores>
+			<Store>Store-22</Store>
+			<DeviceCollection>DeviceCollection-22</DeviceCollection>
+		  </Associated_Stores>
+		  <Associated_Stores>
+			<Store>Store-23</Store>
+			<DeviceCollection>DeviceCollection-23</DeviceCollection>
+		  </Associated_Stores>
+	</StoresAndDevices>
+    <Setting>
+	  <Domain>test.org</Domain>
+      <WR_DeviceCollection>DeviceCollection-WR</WR_DeviceCollection>
+      <ServersPVS_COD1>pvs-01, pvs-02, pvs-03</ServersPVS_COD1>
+      <ServersPVS_COD2>pvs-21, pvs-22, pvs-23</ServersPVS_COD2>
+	  <SiteName>Main</SiteName>
+	 </Setting>
+	 </configuration>
