@@ -12,7 +12,7 @@
 
 # Importing a module to work with PVS
 Import-Module "C:\Program Files\Citrix\Provisioning Services Console\Citrix.PVS.SnapIn.dll"
-#Set-PvsConnection -Server localhost
+Set-PvsConnection -Server localhost
 
 # Creating a name for the log file with the current date
 $date = get-date -Format "yyyy.MM.dd"
