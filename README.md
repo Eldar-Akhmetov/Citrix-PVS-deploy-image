@@ -25,7 +25,7 @@
 
 ## Запуск скипта <a name="запуск"></a>
 
-1) Склонировать проект на PVS сервер к которому привязаны образы в private режиме.  
+1) Клонировать проект на PVS сервер к которому привязаны образы в private режиме.  
 
 По HTTPS ссылке: 
 ```
@@ -35,7 +35,7 @@ git clone https://github.com/Eldar-Akhmetov/Citrix-PVS-deploy-image.git
 ```
 git clone git@github.com:Eldar-Akhmetov/Citrix-PVS-deploy-image.git
 ```
-Или скачать ZIP архив: __https://github.com/Eldar-Akhmetov/Citrix-PVS-deploy-image/archive/refs/heads/main.zip__  
+Или скачать ZIP архив: [Citrix-PVS-deploy-image.zip](https://github.com/Eldar-Akhmetov/Citrix-PVS-deploy-image/archive/refs/heads/main.zip)  
 
 2) Заполнить необходимые данные в [Setting.xml](https://github.com/Eldar-Akhmetov/Citrix-PVS-deploy-image/blob/main/Setting.xml)  
 3) Выполнить файл [Citrix-PVS-deploy-image.ps1](https://github.com/Eldar-Akhmetov/Citrix-PVS-deploy-image/blob/main/Citrix-PVS-deploy-image.ps1)
