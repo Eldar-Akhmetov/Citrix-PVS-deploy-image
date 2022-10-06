@@ -1,6 +1,7 @@
 # Citrix-PVS-deploy-image
 - [Описание](#описание)
-- [Первоначальная настройка](#настройка)
+- [Требования](#требования)
+- [Предварительная настройка](#настройка)
 - [Запуск скрипта](#запуск)
 - [Логирование](#логирование)
 - [Классы объектов](#классы)
@@ -23,6 +24,12 @@
 6) После копирования образов они добавляются в хранилище образов PVS во 2-ом ЦОД.
 7) Выполняется привязка образов к device dollections согласно ассоциации коллекций устройств с хранилищами образов в файле "Setting.xml". 
 
+## Требования <a name="требования"></a>
+- Windows Server (2012 r2+)
+- Powershell (5.1+)
+- Модуль Powershell "Citrix.PVS.SnapIn" (устанавливается вместе с Provisioning Services Console).  
+Можно импортировать отдельно, в скрипте путь к модулю указан по умолчанию "C:\Program Files\Citrix\Provisioning Services Console\Citrix.PVS.SnapIn.dll", в файле Citrix-PVS-deploy-image.ps1
+
 ## Запуск скипта <a name="запуск"></a>
 
 1) Клонировать проект на PVS сервер к которому привязаны образы в private режиме.  
@@ -40,7 +47,7 @@ git clone git@github.com:Eldar-Akhmetov/Citrix-PVS-deploy-image.git
 2) Заполнить необходимые данные в [Setting.xml](https://github.com/Eldar-Akhmetov/Citrix-PVS-deploy-image/blob/main/Setting.xml)  
 3) Выполнить файл [Citrix-PVS-deploy-image.ps1](https://github.com/Eldar-Akhmetov/Citrix-PVS-deploy-image/blob/main/Citrix-PVS-deploy-image.ps1)
 
-## Файл Setting.xml <a name="настройка"></a>
+## Предварительная настройка <a name="настройка"></a>
 Перед началом работы, необходимо заполнить теги в файле конфигурации [Setting.xml](https://github.com/Eldar-Akhmetov/Citrix-PVS-deploy-image/blob/main/Setting.xml):
 #### 1) Тег \<Associated_Stores> - ассоциации Store и Device Collection, образ из данного хранилища будет привязан ко всем виртуальным машинам в указанной коллекции машин.
 Тег \<Associated_Stores> содержит под теги \<Store> - имя store, образ которого будет привязан к вирткальным машинам и \<DeviceCollection> - имя коллекции виртуальных машин для привязки.
